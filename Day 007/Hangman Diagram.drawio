@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" modified="2023-04-06T04:47:28.660Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" version="21.1.4" etag="GcAtVGZCo8wixLjYIJDV" type="github">
+  <diagram name="Page-1" id="rxd6fCZebPZnr8xoSVUx">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Start" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="264" width="50" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Initialize game" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="228" y="84" width="121" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Select a word" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="215" y="168" width="147" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Set up game board" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="214" y="384" width="149" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Ask for user input" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="218" y="468" width="142" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Check if letter is correct" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="176" y="571" width="226" height="226" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Update game board" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="96" y="866" width="156" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Reduce remaining guesses" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="302" y="866" width="201" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Check if game is lost" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="190" y="950" width="197" height="197" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="End game: display victory message" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry y="1216" width="264" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="End game: display defeat message" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="314" y="1216" width="262" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.49283355712890625;exitY=1;entryX=0.5011708913755811;entryY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5011708913755811;exitY=1;entryX=0.5009637949418049;entryY=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Randomly choose a word" style="curved=1;startArrow=none;endArrow=block;exitX=0.5009637949418049;exitY=0.9986394765425701;entryX=0.5009508580969484;entryY=-0.00588226318359375;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5009508580969484;exitY=0.9941177368164062;entryX=0.4974766046228543;entryY=-0.00588226318359375;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Check if input is valid" style="curved=1;startArrow=none;endArrow=block;exitX=0.4974766046228543;exitY=0.9941177368164062;entryX=0.498414503789581;entryY=-0.0008849422488592367;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Correct letter" style="curved=1;startArrow=none;endArrow=block;exitX=0.11103860688811124;exitY=0.9985250962519012;entryX=0.5022436533218775;entryY=-0.00980377197265625;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="174" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Incorrect letter" style="curved=1;startArrow=none;endArrow=block;exitX=0.8857904006910509;exitY=0.9985250962519012;entryX=0.5021559492272524;entryY=-0.00980377197265625;" edge="1" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="403" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5022436533218775;exitY=0.9901962280273438;entryX=0.037802091665286454;entryY=-0.0016920215587325508;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="174" y="925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5021559492272524;exitY=0.9901962280273438;entryX=0.9636362622072547;entryY=-0.0016920215587325508;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="403" y="925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="Game won" style="curved=1;startArrow=none;endArrow=block;exitX=-0.00033836558385548856;exitY=0.9257605702450181;entryX=0.5004103689482717;entryY=0.002451279584099265;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="132" y="1182" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="Game lost" style="curved=1;startArrow=none;endArrow=block;exitX=1.0017767194563967;exitY=0.9257605702450181;entryX=0.5006680088188812;entryY=0.002451279584099265;" edge="1" parent="1" source="10" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="1182" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
