@@ -3,25 +3,25 @@
 import time
 
 def prime_checker(number):
-    primes = [2]
+    primes = {2}
     if number < 0:
         print('Please only provide positive number')
-    if number % 2 != 0:
-        for num in range(3,number+1,2):
-            for prime in primes:
-                check = True
-                if num % prime == 0:
-                    check = False
-                    break
-            if check:
-                primes.append(num)
-                if number % num == 0:
-                    break
+    
+    for num in range(3,number+1,2):
+        for prime in primes:
+            check = True
+            if num % prime == 0:
+                check = False
+                break
+        if check:
+            primes.add(num)
+            if number % num == 0:
+                break
     if number in primes:
         print("It's a prime number.")
     else:
         print("It's not a prime number.")
-    print(max(primes))
+        print(f"It is divisible by {max(primes)}")
 
 #Write your code above this line 👆
     
