@@ -97,6 +97,8 @@ def game_on():
     if choice == 'y':
         clear()
         blackjack()
+    else:
+        exit()
         
 def clear():
     # for windows
