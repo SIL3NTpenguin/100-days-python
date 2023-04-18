@@ -46,17 +46,18 @@ def lose(score):
     clear()
     print(art.logo)
     print(f"Sorry, that's wrong. Final score: {score}")
-    exit()
+    return False
 
 def higherlower():
     last_celeb = None
     score = 0
-    while True:
+    game_on = True
+    while game_on:
         score_add, last_celeb = new_round(last_celeb, score)
         if score_add == 1:
             score += score_add
         else:
-            lose(score)
+            game_on = lose(score)
         print(score)
 
 if __name__ == "__main__":
