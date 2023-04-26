@@ -41,8 +41,6 @@ class CoffeeMachine:
             "milk": 200,
             "coffee": 100,
         }
-    # TODO request user input
-    # TODO hand off input for report, off, espresso, latte, and cappichino
 
     def report(self):
         print(f"Water: {self.resources['water']} ml")
